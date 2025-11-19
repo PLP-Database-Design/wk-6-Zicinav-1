@@ -1,6 +1,6 @@
 # 🧪 Phase 2 Deliverables — CleanCity: Waste Pickup Scheduler
 
-## 1️⃣ Test Case Table — Draft
+## 1️⃣ Test Case Table
 
 | TC ID | Test Title | Precondition | Test Steps | Expected Result | Severity | Status |
 |-------|-------------|---------------|-------------|------------------|-----------|--------|
@@ -26,7 +26,7 @@
 | TC20 | LocalStorage persistence | Submit & reload browser | Request remains visible after reload | Pass | Medium | Not Run |
 
 
-## 2️⃣ Exploratory Testing Checklist
+## 2️⃣ Testing Checklist
 
 | Area | Objective | Checks / Notes | Status |
 |------|------------|----------------|--------|

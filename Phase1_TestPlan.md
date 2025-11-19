@@ -1,10 +1,8 @@
 CleanCity Waste Pickup Scheduler – Phase 1 Test Plan
 
-Project Phase: 1 – Planning & Setup 
+Project Phase: 1 – Planning & Setup
 
-Due Date: Wednesday, November 5, 2025 
-
----
+Due Date: Wednesday, November 5, 2025
 
 1. Project Overview
 
@@ -14,19 +12,19 @@ CleanCity is a React-based web application simulating a waste management system 
 
 Purpose of Test Plan:
 
-* To outline the testing strategy for Phase 1
-* To define testing objectives, scope, resources, and schedule
-* To identify risks, dependencies, and test coverage
+- To outline the testing strategy for Phase 1
+- To define testing objectives, scope, resources, and schedule
+- To identify risks, dependencies, and test coverage
 
 ---
 
 2. Objectives
 
-* Verify that the project repository runs locally without errors
-* Ensure core functionality of the application (forms, navigation, and dashboard)
-* Test manual and automated QA scenarios
-* Identify intentional and unintentional bugs early in development
-* Prepare documentation for team roles and communication
+- Verify that the project repository runs locally without errors
+- Ensure core functionality of the application (forms, navigation, and dashboard)
+- Test manual and automated QA scenarios
+- Identify intentional and unintentional bugs early in development
+- Prepare documentation for team roles and communication
 
 ---
 
@@ -34,17 +32,17 @@ Purpose of Test Plan:
 
 In Scope:
 
-* Home Page: Waste pickup form validation, success messages
-* Dashboard: Display of pickup requests, filtering, and responsive design
-* Feedback Page: Form submission, request ID validation
-* Awareness Page: Accessibility testing, missing alt-text, responsive grid
-* Admin Panel: Request management, status updates, data persistence
+- Home Page: Waste pickup form validation, success messages
+- Dashboard: Display of pickup requests, filtering, and responsive design
+- Feedback Page: Form submission, request ID validation
+- Awareness Page: Accessibility testing, missing alt-text, responsive grid
+- Admin Panel: Request management, status updates, data persistence
 
 Out of Scope:
 
-* Backend API integration (localStorage is used instead)
-* Advanced automated deployment tests
-* Integration with third-party payment systems
+- Backend API integration (localStorage is used instead)
+- Advanced automated deployment tests
+- Integration with third-party payment systems
 
 ---
 
@@ -62,19 +60,19 @@ Out of Scope:
 
 4.2 Automated Testing
 
-* Framework: React Testing Library
-* Command: `npm test`
-* Focus:
+- Framework: React Testing Library
+- Command: `npm test`
+- Focus:
 
-  * Component rendering
-  * Form validation logic
-  * Status update functionality
-  * Data persistence checks
+  - Component rendering
+  - Form validation logic
+  - Status update functionality
+  - Data persistence checks
 
-4.3 Regression Testing
+    4.3 Regression Testing
 
-* Retest after fixing bugs to ensure existing functionality is unaffected
-* Verify changes do not introduce new errors
+- Retest after fixing bugs to ensure existing functionality is unaffected
+- Verify changes do not introduce new errors
 
 ---
 
@@ -93,35 +91,35 @@ Out of Scope:
 
 6. Roles & Responsibilities
 
-| Role          | Name             | Responsibilities                                                |
-| ------------- | ---------------- | --------------------------------------------------------------- |
-| Test Manager  | Palesa Radebe    | Oversees testing process, approves deliverables                 |
-| Risk Analyst  | Veliswa Zicina   | Analyzes risks, prioritizes test focus, reports critical issues |
-| Test Executor | Josephine Mbugua | Executes test cases, records results, reports bugs              |
+| Role          | Name                | Responsibilities                                                |
+| ------------- | ------------------- | --------------------------------------------------------------- |
+| Test Manager  | Palesa Radebe       | Oversees testing process, approves deliverables                 |
+| Risk Analyst  | Veliswa Zicina      | Analyzes risks, prioritizes test focus, reports critical issues |
+| Test Executor | P Radebe & V Zicina | Executes test cases, records results, reports bugs              |
 
 ---
 
 7. Communication Plan
 
-* Daily Updates: WhatsApp 
-* Weekly Meeting: Voice calls to see how far everyone is 
-* Issue Reporting: GitHub Issues for bug tracking
-* Documentation: Share test logs and reports in repository
+- Daily Updates: WhatsApp
+- Weekly Meeting: Voice calls to see how far everyone is
+- Issue Reporting: GitHub Issues for bug tracking
+- Documentation: Share test logs and reports in repository
 
 ---
 
 8. Deliverables
 
-* Test Plan document (this file)
-* Manual test cases and logs
-* Automated test scripts (React Testing Library)
-* Deployment to Netlify
-* Team roles and communication plan
+- Test Plan document (this file)
+- Manual test cases and logs
+- Automated test scripts (React Testing Library)
+- Deployment to Netlify
+- Team roles and communication plan
 
 9. Approval
 
-| Role          | Name             | Signature | Date       |
-| ------------- | ---------------- | --------- | ---------- |
-| Test Manager  | Palesa Radebe    | P.Radebe  | 05/11/2025 |
-| Risk Analyst  | Veliswa Zicina   | V.Zicina  | 05/11/2025 |
-| Test Executor | Josephine Mbugua | J.Mbugua  | 05/11/2025 |
+| Role          | Name           | Signature | Date       |
+| ------------- | -------------- | --------- | ---------- |
+| Test Manager  | Palesa Radebe  | P.Radebe  | 05/11/2025 |
+| Risk Analyst  | Veliswa Zicina | V.Zicina  | 05/11/2025 |
+| Test Executor |                |           | 05/11/2025 |
