@@ -4,15 +4,15 @@
 
 | TC ID | Test Title | Precondition | Test Steps | Expected Result | Severity | Status |
 |-------|-------------|---------------|-------------|------------------|-----------|--------|
-| TC01 | Verify application loads correctly | Browser open | Open `index.html` | Homepage displays without console errors | Low | Not Run |
-| TC02 | Validate required form fields | Pickup form displayed | Leave all fields blank → Submit | Validation messages appear for all required fields | High | Not Run |
-| TC03 | Validate name minimum length | Pickup form displayed | Enter 2-character name → Submit | “Name must be at least 3 characters” shown | Medium | Not Run |
-| TC04 | Validate phone number input | Pickup form displayed | Enter letters instead of digits | Validation error: “Enter a valid phone number” | Medium | Not Run |
-| TC05 | Validate email format | Pickup form displayed | Enter invalid email (e.g. `abc@`) | “Invalid email format” shown | Medium | Not Run |
-| TC06 | Validate preferred date in the past | Pickup form displayed | Enter yesterday’s date | Error: “Date must be today or later” | Medium | Not Run |
-| TC07 | Validate comments field | Feedback form displayed | Leave comments empty → Submit | Validation message appears | Medium | Not Run |
-| TC08 | Submit valid pickup form | All fields filled correctly | Fill valid data → Submit | Success message, record stored in localStorage | High | Not Run |
-| TC09 | View stored requests | After submitting pickup | Navigate to Admin or Dashboard | Recently added record displays | Medium | Not Run |
+| TC01 | Verify application loads correctly | Browser open | Open `index.html` | Homepage displays without console errors | Low | Pass |
+| TC02 | Validate required form fields | Pickup form displayed | Leave all fields blank → Submit | Validation messages appear for all required fields | High | Partial(sequential validation instead of aggregate) |
+| TC03 | Validate name minimum length | Pickup form displayed | Enter 2-character name → Submit | “Name must be at least 3 characters” shown | Medium | Fail(Form submits for single and double character names) |
+| TC04 | Validate full name input | Pickup form displayed | Enter digits instead of letters | Validation error: “Enter a valid name” | Medium | Fail(Form submits withy digits in the name field)|
+| TC05 | Validate email format | Pickup form displayed | Enter invalid email (e.g. `abc@`) | “Invalid email format” shown | Medium | Pass |
+| TC06 | Validate preferred date in the past | Pickup form displayed | Enter yesterday’s date | Error: “Date must be today or later” | Medium | Fail(Form submits with past dates) |
+| TC07 | Validate comments field | Feedback form displayed | Leave comments empty → Submit | Validation message appears | Medium | Pass |
+| TC08 | Submit valid pickup form | All fields filled correctly | Fill valid data → Submit | Success message, record stored in localStorage | High | Fail(Records not found under profile) |
+| TC09 | View stored requests | After submitting pickup | Navigate to Admin or Dashboard | Recently added record displays | Medium | Fail(dashboard shows zero requests) |
 | TC10 | Filter requests by location = “Eldoret” | At least 2 requests exist | Select location “Eldoret” from filter | Displays only Eldoret requests | **Fails due to bug** | High | Fail |
 | TC11 | Filter requests by location = “Nairobi” | As above | Select “Nairobi” | Displays only Nairobi requests | Pass | Not Run |
 | TC12 | Admin mark as “Scheduled” | Admin page | Click “Mark as Scheduled” | Status updates in localStorage | Medium | Not Run |
